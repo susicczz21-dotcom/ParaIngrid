@@ -1,4 +1,4 @@
-# Imagen base con Java (ajusta la versión según tu pom.xml)
+# Imagen base con Java
 FROM eclipse-temurin:17-jdk-alpine
 
 # Carpeta de trabajo dentro del contenedor
@@ -16,5 +16,5 @@ RUN ./mvnw clean package -DskipTests
 # Expone el puerto que usa tu app (normalmente 8080)
 EXPOSE 8080
 
-# Comando para arrancar la app
+# Comando para arrancar la app (con sh -c para que funcione el comodín)
 CMD ["sh", "-c", "java -jar target/*.jar"]
