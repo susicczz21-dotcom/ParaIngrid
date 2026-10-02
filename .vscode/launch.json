@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ParaingridApplication<paraingrid>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.sun.paraingrid.ParaingridApplication",
+            "projectName": "paraingrid",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
